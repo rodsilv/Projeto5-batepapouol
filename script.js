@@ -12,6 +12,7 @@ function logarnasala(){
     do { usuario = prompt("Digite o seu nome");}
     while (usuario === "");
     const nome = axios.post("https://mock-api.driven.com.br/api/v6/uol/participants", {name: usuario});
+    nome.catch(logarnasala);
 }
 
 

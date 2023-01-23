@@ -45,7 +45,7 @@ function msgchegaram(resposta){
                 let texto = k.text
                 let quem = k.to
                 msgdopovo(inorout,hora,texto,quem)}
-                else if(k.type==="private"){
+                else if(k.type==="private_message"){
                     let inorout =k.from
                     let hora = k.time   
                     let texto = k.text
@@ -109,3 +109,4 @@ logarnasala();
 pegarmsgnoservidor();
 setInterval(ficarlogado, 5000);
 setInterval(pegarmsgnoservidor, 3000);
+wgadsge

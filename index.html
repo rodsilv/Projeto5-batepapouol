@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="menu-lateral">
-            <div class="cinza"></div>
+            <div data-test="overlay" class="cinza"></div>
             <div class="menu-opcoes">
                 <div class="caixa-menu-topo">Escolha um contato
                     para enviar mensagem:</div>
@@ -22,7 +22,7 @@
         </div>
         <div class="barra-topo">
             <div class="logo"> <img class="foto-logo" src="Fotos/logo.png"></div>
-            <ion-icon class="menu-topo" name="people"></ion-icon>
+            <ion-icon data-test="send-message" class="menu-topo" name="people"></ion-icon>
         </div>
         <div class="suportemsg"></div>
         <div class="local-feed">
@@ -30,9 +30,9 @@
         </div>
         <div class="barra-baixo">
             <div class="escreva-aqui">
-                <input class="italic" type="text" placeholder="Escreva aqui..." /></div>
+                <input data-test="input-message" class="italic" type="text" placeholder="Escreva aqui..." /></div>
                 <div class="mandarmsg" onclick="enviarmsg()">
-            <ion-icon class="enviar" name="paper-plane-outline"></ion-icon></div>
+            <ion-icon data-test="send-message" class="enviar" name="paper-plane-outline"></ion-icon></div>
         </div>
     </div>
 
